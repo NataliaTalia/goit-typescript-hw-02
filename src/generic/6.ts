@@ -8,16 +8,16 @@
 */
 
 type User = {
-  name: string;
-  surname: string;
-  email: string;
-  password: string;
-}
+  name?: string;
+  surname?: string;
+  email?: string;
+  password?: string;
+};
 
 function createOrUpdateUser(initialValues: User) {
-  // Оновлення користувача
+  // Update the user based on the provided initialValues
 }
 
-createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
+createOrUpdateUser({ email: "user@mail.com", password: "password123" });
 
 export {};
